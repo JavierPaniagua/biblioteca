@@ -1,0 +1,49 @@
+<div class="card">
+    
+    <div class="card-header bg-primary text-white text-center">
+        Categorias
+    </div>
+
+    <div class="card-body">
+        
+        <div class="row">
+            <div class="col-md-2">
+                <label>Id</label>
+            </div>
+            <div class="col-md-2">
+                <input id="id_categoria" name="id_categoria" type="text" 
+                onchange="buscar_id()"
+                class="form-control form-control-sm" autofocus>
+            </div>
+            <div class="col-md-1">
+                <button type="button" class="btn btn-primary btn-sm" 
+                onclick="cargar_busqueda('static/frm/archivos/categorias/buscar_categorias.html')">
+                    ...
+                </button>        
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">
+                <label>Nombre</label>
+            </div>
+            <div class="col-md-10">
+                <input id="nombre_categoria" name="nombre_categoria" type="text" 
+                class="form-control form-control-sm" placeholder="Nombre de la categoria">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card-footer text-center">
+        <button id="boton-agregar" type="button" class="btn btn-primary btn-sm" 
+        onclick="agregar()">Agregar</button>
+        <button id="boton-modificar" type="button" class="btn btn-success btn-sm" 
+        onclick="modificar()">Modificar</button>
+        <button id="boton-eliminar" type="button" class="btn btn-danger btn-sm" 
+        onclick="eliminar()">Eliminar</button>
+        <button id="boton-salir-formulario" type="button" class="btn btn-warning btn-sm" 
+        onclick="salir_formulario()">Salir</button>
+    </div>
+
+</div>
