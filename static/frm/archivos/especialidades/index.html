@@ -1,0 +1,49 @@
+<div class="card">
+    
+    <div class="card-header bg-primary text-white text-center">
+        Especialidades
+    </div>
+
+    <div class="card-body">
+        
+        <div class="row">
+            <div class="col-md-2">
+                <label>Id</label>
+            </div>
+            <div class="col-md-2">
+                <input id="id_especialidades" name="id_especialidades" type="text" 
+                onchange="buscar_id()"
+                class="form-control form-control-sm" autofocus>
+            </div>
+            <div class="col-md-1">
+                <button type="button" class="btn btn-primary btn-sm" 
+                onclick="cargar_busqueda('static/frm/archivos/especialidades/buscar_categorias.html')">
+                    ...
+                </button>        
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">
+                <label>Nombre</label>
+            </div>
+            <div class="col-md-10">
+                <input id="nombre_especialidades" name="nombre_especialidades" type="text" 
+                class="form-control form-control-sm" placeholder="Nombre de la Especialidad">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card-footer text-center">
+        <button id="boton-agregar" type="button" class="btn btn-primary btn-sm" 
+        onclick="agregar()">Agregar</button>
+        <button id="boton-modificar" type="button" class="btn btn-success btn-sm" 
+        onclick="modificar()">Modificar</button>
+        <button id="boton-eliminar" type="button" class="btn btn-danger btn-sm" 
+        onclick="eliminar()">Eliminar</button>
+        <button id="boton-salir-formulario" type="button" class="btn btn-warning btn-sm" 
+        onclick="salir_formulario()">Salir</button>
+    </div>
+
+</div>

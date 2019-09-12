@@ -1,0 +1,147 @@
+<div class="card">
+
+    <div class="card-header bg-primary text-white text-center">
+        Alumnos
+    </div>
+
+    <div class="card-body">
+
+        <div class="row">
+
+            <div class="col-md-2">
+                <label>Id</label>
+            </div>
+
+            <div class="col-md-2">
+                <input id="id_alumno" name="id_alumno" type="text"
+                    onchange="buscar_id()"
+                    class="form-control form-control-sm" autofocus>
+            </div>
+
+            <div class="col-md-1">
+                <button type="button" class="btn btn-primary btn-sm"
+                    onclick="cargar_busqueda('static/frm/archivos/alumnos/buscar_alumnos.html')">
+                    ...
+                </button>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-2">
+                <label>Nombre</label>
+            </div>
+
+            <div class="col-md-10">
+                <input id="nombre_alumno" name="nombre_alumno" type="text"
+                class="form-control form-control-sm" placeholder="Nombre del Alumno">
+            </div>
+
+        </div>
+
+        <div class="row">
+
+                <div class="col-md-2">
+                    <label>Cédula</label>
+                </div>
+    
+                <div class="col-md-10">
+                    <input id="cedula_alumno" name="cedula_alumno" type="text"
+                    class="form-control form-control-sm" placeholder="Cédula del Alumno">
+                </div>
+                
+        </div>
+
+        <div class="row">
+
+                <div class="col-md-2">
+                    <label>Dirección</label>
+                </div>
+    
+                <div class="col-md-10">
+                    <input id="direccion_alumno" name="direccion_alumno" type="text"
+                    class="form-control form-control-sm" placeholder="Dirección del Alumno">
+                </div>
+    
+        </div>
+
+        <div class="row">
+
+                <div class="col-md-2">
+                    <label>Teléfono</label>
+                </div>
+    
+                <div class="col-md-10">
+                    <input id="telefono_alumno" name="telefono_alumno" type="text"
+                    class="form-control form-control-sm" placeholder="Teléfono del Alumno">
+                </div>
+    
+        </div>
+
+        <div class="row">
+
+                <div class="col-md-2">
+                    <label>Curso</label>
+                </div>
+    
+                <div class="col-md-2">
+                    <input id="id_curso" name="id_curso" type="text"
+                        onchange="buscar_id_curso()"
+                        class="form-control form-control-sm">
+                </div>
+    
+                <div class="col-md-1">
+                    <button type="button" class="btn btn-primary btn-sm"
+                        onclick="cargar_busqueda('static/frm/archivos/alumnos/buscar_cursos.html')">
+                        ...
+                    </button>
+                </div>
+
+                <div class="col-md-7">
+                        <input id="nombre_curso" name="nombre_curso" type="text" placeholder="Nombre del Curso" readonly
+                            class="form-control form-control-sm">
+                </div>
+    
+        </div>
+
+        <div class="row">
+
+                <div class="col-md-2">
+                    <label>Especialidad</label>
+                </div>
+    
+                <div class="col-md-2">
+                    <input id="id_especialidad" name="id_especialidad" type="text"
+                        onchange="buscar_id_especialidad()"
+                        class="form-control form-control-sm">
+                </div>
+    
+                <div class="col-md-1">
+                    <button type="button" class="btn btn-primary btn-sm"
+                        onclick="cargar_busqueda('static/frm/archivos/alumnos/buscar_especialidades.html')">
+                        ...
+                    </button>
+                </div>
+
+                <div class="col-md-7">
+                        <input id="nombre_especialidad" name="nombre_especialidad" type="text" placeholder="Nombre de la Especialidad" 
+                        readonly class="form-control form-control-sm">
+                </div>
+    
+        </div>
+
+    </div>
+   
+    <div class="card-footer text-center">
+        <button id="boton-agregar" type="button" class="btn btn-primary btn-sm" 
+        onclick="agregar()">Agregar</button>
+        <button id="boton-modificar" type="button" class="btn btn-success btn-sm"
+        onclick="modificar()">Modificar</button>
+        <button id="boton-eliminar" type="button" class="btn btn-danger btn-sm"
+        onclick="eliminar()">Eliminar</button>
+        <button id="boton-salir-formulario" type="button" class="btn btn-warning btn-sm"
+        onclick="salir_formulario()">Salir</button>
+    </div>
+
+</div>
